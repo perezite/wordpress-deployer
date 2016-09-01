@@ -1,0 +1,136 @@
+. 2016-09-01 10:22:30.037 --------------------------------------------------------------------------
+. 2016-09-01 10:22:30.038 WinSCP Version 5.9.1 (Build 6885) (OS 6.3.9600 - Windows 8.1 Enterprise)
+. 2016-09-01 10:22:30.038 Configuration: nul
+. 2016-09-01 10:22:30.038 Log level: Normal
+. 2016-09-01 10:22:30.038 Local account: HP330G\simon_000
+. 2016-09-01 10:22:30.038 Working directory: Z:\Indie\Development\Simulo\wordpress-deployer
+. 2016-09-01 10:22:30.038 Process ID: 11756
+. 2016-09-01 10:22:30.038 Command-line: "Z:\Indie\Development\Simulo\wordpress-deployer\winscp-portable\WinSCP.exe" /console=591 /consoleinstance=_7352_122 "/script=Script.winscp" "/log=Script.log" "/ini=nul" 
+. 2016-09-01 10:22:30.038 Time zone: Current: GMT+2, Standard: GMT+1 (W. Europe Standard Time), DST: GMT+2 (W. Europe Daylight Time), DST Start: 27.03.2016, DST End: 30.10.2016
+. 2016-09-01 10:22:30.038 Login time: Donnerstag, 1. September 2016 10:22:30
+. 2016-09-01 10:22:30.038 --------------------------------------------------------------------------
+. 2016-09-01 10:22:30.038 Script: Retrospectively logging previous script records:
+> 2016-09-01 10:22:30.038 Script: open ftpes://gleichm@lava.metanet.ch/
+. 2016-09-01 10:22:30.038 --------------------------------------------------------------------------
+. 2016-09-01 10:22:30.038 Session name: gleichm@lava.metanet.ch (Ad-Hoc site)
+. 2016-09-01 10:22:30.038 Host name: lava.metanet.ch (Port: 21)
+. 2016-09-01 10:22:30.038 User name: gleichm (Password: No, Key file: No)
+. 2016-09-01 10:22:30.038 Transfer Protocol: FTP
+. 2016-09-01 10:22:30.038 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2016-09-01 10:22:30.038 Disable Nagle: No
+. 2016-09-01 10:22:30.038 Proxy: None
+. 2016-09-01 10:22:30.038 Send buffer: 262144
+. 2016-09-01 10:22:30.038 UTF: Auto
+. 2016-09-01 10:22:30.038 FTPS: Explicit TLS/SSL [Client certificate: No]
+. 2016-09-01 10:22:30.038 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2016-09-01 10:22:30.038 Session reuse: Yes
+. 2016-09-01 10:22:30.038 TLS/SSL versions: TLSv1.0-TLSv1.2
+. 2016-09-01 10:22:30.038 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2016-09-01 10:22:30.038 Cache directory changes: Yes, Permanent: Yes
+. 2016-09-01 10:22:30.038 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2016-09-01 10:22:30.038 Timezone offset: 0h 0m
+. 2016-09-01 10:22:30.038 --------------------------------------------------------------------------
+. 2016-09-01 10:22:30.041 Connecting to lava.metanet.ch ...
+. 2016-09-01 10:22:30.079 Connected with lava.metanet.ch, negotiating TLS connection...
+< 2016-09-01 10:22:30.112 220 ProFTPD 1.3.6rc2 Server (ProFTPD) [80.74.148.30]
+> 2016-09-01 10:22:30.112 AUTH TLS
+< 2016-09-01 10:22:30.128 234 AUTH TLS successful
+. 2016-09-01 10:22:30.323 Verifying certificate for "METANET AG" with fingerprint 7c:1e:84:fa:22:29:aa:1f:19:98:69:85:f4:cc:02:ae:b1:a4:1a:5e and 20 failures
+. 2016-09-01 10:22:30.323 Certificate common name "*.metanet.ch" matches hostname
+. 2016-09-01 10:22:30.382 Certificate verified against Windows certificate store
+. 2016-09-01 10:22:30.383 Using TLSv1, cipher TLSv1/SSLv3: ECDHE-RSA-AES256-SHA, 2048 bit RSA, ECDHE-RSA-AES256-SHA    SSLv3 Kx=ECDH     Au=RSA  Enc=AES(256)  Mac=SHA1
+. 2016-09-01 10:22:30.383 TLS connection established. Waiting for welcome message...
+> 2016-09-01 10:22:30.383 USER gleichm
+< 2016-09-01 10:22:30.400 331 Password required for gleichm
+> 2016-09-01 10:22:37.224 PASS *****************
+< 2016-09-01 10:22:37.254 230 User gleichm logged in
+> 2016-09-01 10:22:37.254 SYST
+< 2016-09-01 10:22:37.271 215 UNIX Type: L8
+> 2016-09-01 10:22:37.271 FEAT
+< 2016-09-01 10:22:37.288 211-Features:
+< 2016-09-01 10:22:37.288  AUTH TLS
+< 2016-09-01 10:22:37.288  CCC
+< 2016-09-01 10:22:37.288  EPRT
+< 2016-09-01 10:22:37.288  EPSV
+< 2016-09-01 10:22:37.288  HOST
+< 2016-09-01 10:22:37.289  LANG en-US.UTF-8*
+< 2016-09-01 10:22:37.289  MDTM
+< 2016-09-01 10:22:37.290  MFF modify;UNIX.group;UNIX.mode;
+< 2016-09-01 10:22:37.290  MFMT
+< 2016-09-01 10:22:37.290  MLST modify*;perm*;size*;type*;unique*;UNIX.group*;UNIX.mode*;UNIX.owner*;
+< 2016-09-01 10:22:37.291  PBSZ
+< 2016-09-01 10:22:37.291  PROT
+< 2016-09-01 10:22:37.291  REST STREAM
+< 2016-09-01 10:22:37.291  SIZE
+< 2016-09-01 10:22:37.291  SSCN
+< 2016-09-01 10:22:37.291  TVFS
+< 2016-09-01 10:22:37.291  UTF8
+< 2016-09-01 10:22:37.291 211 End
+> 2016-09-01 10:22:37.291 OPTS UTF8 ON
+< 2016-09-01 10:22:37.308 200 UTF8 set to on
+> 2016-09-01 10:22:37.308 PBSZ 0
+< 2016-09-01 10:22:37.325 200 PBSZ 0 successful
+> 2016-09-01 10:22:37.325 PROT P
+< 2016-09-01 10:22:37.343 200 Protection set to Private
+. 2016-09-01 10:22:37.343 Connected
+. 2016-09-01 10:22:37.343 --------------------------------------------------------------------------
+. 2016-09-01 10:22:37.343 Using FTP protocol.
+. 2016-09-01 10:22:37.344 Doing startup conversation with host.
+> 2016-09-01 10:22:37.344 PWD
+< 2016-09-01 10:22:37.361 257 "/" is the current directory
+. 2016-09-01 10:22:37.362 Getting current directory name.
+. 2016-09-01 10:22:37.362 Startup conversation with host finished.
+< 2016-09-01 10:22:37.362 Script: Active session: [1] gleichm@lava.metanet.ch
+> 2016-09-01 10:22:37.364 Script: option exclude sensitive.php
+< 2016-09-01 10:22:37.364 Script: include         |sensitive.php
+> 2016-09-01 10:22:37.366 Script: put -neweronly Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test ./wordpress-deployer-test
+. 2016-09-01 10:22:37.368 Copying 1 files/directories to remote directory "./"
+. 2016-09-01 10:22:37.368   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: wordpress-deployer-test
+. 2016-09-01 10:22:37.368   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: Yes; InclM: |sensitive.php; ResumeL: 0
+. 2016-09-01 10:22:37.368   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2016-09-01 10:22:37.369 File: 'Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test' [2016-09-01T07:41:09.657Z] [0]
+. 2016-09-01 10:22:37.370 File: 'Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test\index.php' [2016-08-31T13:32:30.839Z] [678]
+. 2016-09-01 10:22:37.371 Copying "Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test\index.php" to remote directory started.
+. 2016-09-01 10:22:37.371 Binary transfer mode selected.
+. 2016-09-01 10:22:37.372 Starting upload of Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test\index.php
+> 2016-09-01 10:22:37.372 CWD /wordpress-deployer-test/
+< 2016-09-01 10:22:37.390 550 /wordpress-deployer-test/: No such file or directory
+> 2016-09-01 10:22:37.390 CWD /
+< 2016-09-01 10:22:37.409 250 CWD command successful
+> 2016-09-01 10:22:37.409 MKD wordpress-deployer-test
+< 2016-09-01 10:22:37.426 257 "/wordpress-deployer-test" - Directory successfully created
+> 2016-09-01 10:22:37.426 CWD /wordpress-deployer-test/
+< 2016-09-01 10:22:37.446 250 CWD command successful
+> 2016-09-01 10:22:37.446 PWD
+< 2016-09-01 10:22:37.464 257 "/wordpress-deployer-test" is the current directory
+> 2016-09-01 10:22:37.464 TYPE A
+< 2016-09-01 10:22:37.482 200 Type set to A
+> 2016-09-01 10:22:37.482 PASV
+< 2016-09-01 10:22:37.499 227 Entering Passive Mode (80,74,148,30,198,115).
+> 2016-09-01 10:22:37.500 MLSD
+< 2016-09-01 10:22:37.534 150 Opening ASCII mode data connection for MLSD
+. 2016-09-01 10:22:37.539 Session ID reused
+. 2016-09-01 10:22:37.540 Using TLSv1, cipher TLSv1/SSLv3: ECDHE-RSA-AES256-SHA, 2048 bit RSA, ECDHE-RSA-AES256-SHA    SSLv3 Kx=ECDH     Au=RSA  Enc=AES(256)  Mac=SHA1
+. 2016-09-01 10:22:37.541 TLS connection established
+. 2016-09-01 10:22:37.559 modify=20160901082315;perm=flcdmpe;type=cdir;unique=803U6EC0B3D;UNIX.group=1003;UNIX.mode=0755;UNIX.owner=10005; .
+. 2016-09-01 10:22:37.559 modify=20160901080950;perm=flcdmpe;type=pdir;unique=803U6E40865;UNIX.group=1002;UNIX.mode=0710;UNIX.owner=10005; ..
+< 2016-09-01 10:22:37.576 226 Transfer complete
+> 2016-09-01 10:22:37.576 TYPE I
+< 2016-09-01 10:22:37.593 200 Type set to I
+> 2016-09-01 10:22:37.593 PASV
+< 2016-09-01 10:22:37.611 227 Entering Passive Mode (80,74,148,30,196,32).
+> 2016-09-01 10:22:37.611 STOR index.php
+< 2016-09-01 10:22:37.644 150 Opening BINARY mode data connection for index.php
+. 2016-09-01 10:22:37.666 Session ID reused
+. 2016-09-01 10:22:37.668 Using TLSv1, cipher TLSv1/SSLv3: ECDHE-RSA-AES256-SHA, 2048 bit RSA, ECDHE-RSA-AES256-SHA    SSLv3 Kx=ECDH     Au=RSA  Enc=AES(256)  Mac=SHA1
+. 2016-09-01 10:22:37.668 TLS connection established
+< 2016-09-01 10:22:37.698 226 Transfer complete
+> 2016-09-01 10:22:37.699 MFMT 20160831133230 index.php
+< 2016-09-01 10:22:37.717 213 Modify=20160831133230; index.php
+. 2016-09-01 10:22:37.717 Upload successful
+. 2016-09-01 10:22:37.718 Transfer done: 'Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test\index.php' [678]
+. 2016-09-01 10:22:37.718 File "Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test\sensitive.php" excluded from transfer
+* 2016-09-01 10:22:37.719 (EScpSkipFile) 
+> 2016-09-01 10:22:37.720 Script: exit
+. 2016-09-01 10:22:37.720 Script: Exit code: 0
+. 2016-09-01 10:22:37.724 Disconnected from server
