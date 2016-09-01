@@ -1,4 +1,4 @@
-open ftpes://%2%@%1%/
+open ftpes://%2%:%5%@%1%/
 
 option exclude "wp-config.php;.git\"
 

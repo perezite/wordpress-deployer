@@ -17,13 +17,16 @@ SET dbName=%dbNameParameter:~1,-1%
 SET mysqlBinDirParameter=%6%
 SET mysqlBinDir=%mysqlBinDirParameter:~1,-1%
 
+rem # get webpage password
+SET /p webpagePassword="Please enter the webpage password: "
+
 rem # Initialization
 SET basePath=%~dp0
 
 rem # Call win-scp script
 SET winscpExecutable=%basePath:~0,-1%\winscp-portable\winscp.com
 echo Enter Webpage password:
-call %winscpExecutable% /script=DeployWebpage.winscp /log="DeployWebpage.log" /ini=nul /parameter %1 %2 %3 %4
+call %winscpExecutable% /script=DeployWebpage.winscp /log="DeployWebpage.log" /ini=nul /parameter %1 %2 %3 %4 %webpagePassword%
 
 rem # Deploy the database
 SET mysqldumpExecutable=%mysqlBinDir%\mysqldump.exe
