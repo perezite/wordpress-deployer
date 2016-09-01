@@ -2,7 +2,6 @@ open ftpes://gleichm@lava.metanet.ch/
 
 option exclude sensitive.php
 
-# put -neweronly Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test ./wordpress-deployer-test
 put -neweronly %1% %2%
 
 exit

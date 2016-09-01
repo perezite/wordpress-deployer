@@ -1,1 +1,0 @@
-call Deploy.bat "Z:\Indie\Software\XAMPP\htdocs\wordpress-deployer-test" "./httpdocs/wordpress-deployer-test"
