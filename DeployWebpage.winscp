@@ -1,6 +1,6 @@
 open ftpes://%2%@%1%/
 
-option exclude sensitive.php
+option exclude "wp-config.php;.git\"
 
 put -neweronly %3% %4%
 

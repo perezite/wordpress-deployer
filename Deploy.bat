@@ -39,5 +39,5 @@ rem # Cleanup
 cd %basePath%
 
 rem # Goodbye message
-echo Done
+echo Done. Don't forget to upload the wp-config.php manually after the very first deployment!
 pause
