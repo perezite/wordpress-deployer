@@ -1,7 +1,7 @@
-open ftpes://gleichm@lava.metanet.ch/
+open ftpes://%2%@%1%/
 
 option exclude sensitive.php
 
-put -neweronly %1% %2%
+put -neweronly %3% %4%
 
 exit

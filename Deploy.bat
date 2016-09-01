@@ -1,4 +1,4 @@
-@echo on
+@echo off 
 
 rem ## show help if not enough arguments specified
 IF [%6]==[] (
@@ -22,14 +22,22 @@ SET basePath=%~dp0
 
 rem # Call win-scp script
 SET winscpExecutable=%basePath:~0,-1%\winscp-portable\winscp.com
-call %winscpExecutable% /script=DeployWebpage.winscp /log="DeployWebpage.log" /ini=nul /parameter %3 %4
+echo Enter Webpage password:
+call %winscpExecutable% /script=DeployWebpage.winscp /log="DeployWebpage.log" /ini=nul /parameter %1 %2 %3 %4
 
 rem # Deploy the database
 SET mysqldumpExecutable=%mysqlBinDir%\mysqldump.exe
 SET mysqlExecutable=%mysqlBinDir%\mysql.exe
 
 call "%mysqldumpExecutable%" -h localhost -u root %dbName% > DatabaseDump.sql
+echo Enter Database password:
 call "%mysqlExecutable%" -h %host% -u %user% -p -e "drop database if exists %dbName%; create database %dbName%;"
+echo Enter Database password again:
 call "%mysqlExecutable%" -h %host% -u %user% -p %dbName% < DatabaseDump.sql
 
+rem # Cleanup
 cd %basePath%
+
+rem # Goodbye message
+echo Done
+pause
