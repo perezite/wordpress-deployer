@@ -1,6 +1,6 @@
 open ftpes://%2%:%5%@%1%/
 
-option exclude "wp-config.php;.git\"
+option exclude "wp-config.php;.git\;DatabaseDump\"
 
 put -neweronly %3% %4%
 
